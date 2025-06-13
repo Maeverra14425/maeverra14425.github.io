@@ -185,7 +185,7 @@ p {
 
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /**/
@@ -229,36 +229,44 @@ a {
 	color: white;
 	position: relative;
 	z-index: auto;
-}
+	padding: 5em 0;
+	overflow-y: auto;
+	}
 
 .contenttop {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	width: 100%;
 	color: white;
 	text-align: center;
-	width: 75em;
-}
-
-.contentbottom {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	color: white;
-	text-align: center;
-	width: 75em;
-}
+	width: 100%;
+	z-index: 999;
+	background-color: rgb(0, 0, 0, 0.5);
+	}
 
 .contentcenter {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
 	text-align: center;
 	width: 55em;
+}
+
+.contentbottom {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	color: white;
+	text-align: center;
+	width: 100%;
+	z-index: 999;
+	background-color: rgb(0, 0, 0, 0.5);
 }
 
 /**/
